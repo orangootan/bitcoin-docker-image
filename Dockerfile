@@ -3,7 +3,7 @@ RUN apk add busybox=1.27.2-r3 \
     libressl2.6-libcrypto=2.6.3-r0 \
     --repository http://dl-cdn.alpinelinux.org/alpine/edge/main \
     --no-cache
-RUN apk add bitcoin=0.15.0.1-r4 \
+RUN apk add bitcoin=0.15.0.1-r5 \
     --repository http://dl-cdn.alpinelinux.org/alpine/edge/community \
     --no-cache && \
     mkdir /var/lib/bitcoin && \
