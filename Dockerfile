@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM alpine:3.7
 RUN apk add busybox=1.27.2-r3 \
     libressl2.6-libcrypto=2.6.3-r0 \
     --repository http://dl-cdn.alpinelinux.org/alpine/edge/main \
