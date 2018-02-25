@@ -1,5 +1,5 @@
 FROM alpine:3.7
-RUN apk add bitcoin=0.15.1-r1 \
+RUN apk add bitcoin=0.16.0-r0 \
     --repository https://nl.alpinelinux.org/alpine/edge/community \
     --no-cache && \
     mkdir /var/lib/bitcoin && \
