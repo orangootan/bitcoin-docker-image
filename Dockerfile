@@ -5,10 +5,10 @@ RUN apk add boost=1.66.0-r0 \
             boost-system=1.66.0-r0 \
             boost-filesystem=1.66.0-r0 \
             boost-program_options=1.66.0-r0 \
-            libressl2.7-libcrypto=2.7.2-r0 \
+            libressl2.7-libcrypto=2.7.4-r0 \
     --repository https://nl.alpinelinux.org/alpine/edge/main \
     --no-cache
-RUN apk add bitcoin=0.16.0-r2 \
+RUN apk add bitcoin=0.16.1-r2 \
     --repository https://nl.alpinelinux.org/alpine/edge/community \
     --no-cache && \
     mkdir /var/lib/bitcoin && \
