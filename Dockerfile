@@ -1,14 +1,11 @@
-FROM alpine:3.10.1
-RUN apk upgrade \
+FROM alpine:3.11.3
+RUN apk upgrade --no-cache
+RUN apk add boost-chrono=1.72.0-r3 \
+            boost-thread=1.72.0-r3 \
+            boost-filesystem=1.72.0-r3 \
     --repository https://nl.alpinelinux.org/alpine/edge/main \
     --no-cache
-RUN apk add boost-chrono=1.69.0-r5 \
-            boost-thread=1.69.0-r5 \
-            boost-filesystem=1.69.0-r5 \
-            libstdc++=8.3.0-r0 \
-    --repository https://nl.alpinelinux.org/alpine/edge/main \
-    --no-cache
-RUN apk add bitcoin=0.17.1-r2 \
+RUN apk add bitcoin=0.19.0.1-r0 \
     --repository https://nl.alpinelinux.org/alpine/edge/community \
     --no-cache && \
     mkdir /var/lib/bitcoin && \
