@@ -4,7 +4,7 @@ RUN apk add boost-thread=1.72.0-r6 \
             boost-filesystem=1.72.0-r6 \
     --repository https://nl.alpinelinux.org/alpine/edge/main \
     --no-cache
-RUN apk add bitcoin=0.20.0-r0 \
+RUN apk add bitcoin=0.20.1-r0 \
     --repository https://nl.alpinelinux.org/alpine/edge/community \
     --no-cache && \
     mkdir /var/lib/bitcoin && \
