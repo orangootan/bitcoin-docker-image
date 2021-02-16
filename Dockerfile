@@ -1,10 +1,10 @@
-FROM alpine:3.13.0
+FROM alpine:3.13.1
 RUN apk upgrade --no-cache
-RUN apk add boost1.75-thread=1.75.0-r4 \
-            boost1.75-filesystem=1.75.0-r4 \
+RUN apk add boost1.75-thread=1.75.0-r5 \
+            boost1.75-filesystem=1.75.0-r5 \
     --repository https://nl.alpinelinux.org/alpine/edge/main \
     --no-cache
-RUN apk add bitcoin=0.21.0-r0 \
+RUN apk add bitcoin=0.21.0-r1 \
     --repository https://nl.alpinelinux.org/alpine/edge/community \
     --no-cache && \
     mkdir /var/lib/bitcoin && \
